@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Online News</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Images/H.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="Javascript.js"></script>
+
+
+</head>
+<body onLoad="renderTime();">
+<!--Header & Nav Bar-->
+<div class="header">
+    <header>
+        <img class="logo" src="Images/HopeLogo.png">    
+        
+        <div id="clockDisplay"></div>
+        <hr style="width: 95%; margin: auto;">
+    </header>
+
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="Videos.html">VIDEOS</a></li>
+                <li><a href="Articles.html">ARTICLES</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div id="content" >
+    <section id="container-a" class="grid">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="https://sports.inquirer.net/files/2021/08/000_9KB48L.jpg" width = "100%" height = "475px">
+              <div class="text"><a href = "https://sports.inquirer.net/439133/world-no-5-saso-set-for-busy-november" target="_blank" style="color:white"><h1>World No. 5 Saso set for busy November</h1></a><p>Yuka Saso is plunging into a busy November, hoping to cap a sterling, solidly consistent US Ladies Professional Golfers Association (LPGA) season with a victory—or more—against the world’s best female golfers.</p></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://newsinfo.inquirer.net/files/2021/09/News188056-1536x1048.jpg" width = "100%" height = "475px">
+              <div class="text"><a href = "https://newsinfo.inquirer.net/1502809/senate-run-for-roque-after-all" target = "_blank" style="color:white"><h1>Senate run for Roque after all?</h1></a><p>MANILA, Philippines — It looks like presidential spokesperson Harry Roque may have a plan B for his possible Senate run.</p></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://sports.inquirer.net/files/2021/10/Screen-Shot-2021-10-03-at-5.54.10-PM.png" width= "100%" height="475px">
+              <div class="text"><a href = "https://sports.inquirer.net/439160/b-league-kobe-paras-niigata-drop-third-straight-game" target="_blank" style="color:white"><h1>B.League: Kobe Paras, Niigata drop third straight game</h1></a><p>MANILA, Philippines—Hokkaido swept Niigata and Kobe Paras, 72-69, in its two-game series in the East Conference of the 2021-22 Japan B.League Sunday at Hokkai Kitayell.</p></div>
+            </div>
+            
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            <hr style="margin-top: 10px;">
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+            </script>
+    </section>
+    
+    <section id="container-b" class="grid">
+    <div class="row">
+        <!--RECENT NEWS-->
+
+        <div class="column left">
+          <h3 class="subtitle"><span class="yellow">RECENT</span> NEWS</h3> 
+
+          <article class="recent">
+            <div class="floating-box">
+                <img src = "https://newsinfo.inquirer.net/files/2021/11/209132-e1638134342339-620x398.jpeg" alt = "CIVIC DUTY In Pasig City, residents turn up to register as voters at the local Commission on Elections office on Monday as the poll body resumes the listup following the completion of the weeklong filing of certificates of candidacy for the 2022 national elections. The voter’s registration is extended until Oct. 30. —NIÑO JESUS ORBETA" width = "100%" height = "auto">
+                <p class="img-credit">"FILE PHOTO BUSY AGAIN People have been returning to San Pedro Street in Davao City since September, mindful of health protocols as restrictions are eased in the city. —BING GONZALES"</p>
+                <h4 class="heading1"><a href = "https://newsinfo.inquirer.net/1544150/seven-highly-urbanized-cities-log-record-high-new-covid-19-cases-octa" target = "_blank">7 highly urbanized cities log record-high new COVID-19 cases — Octa</a></h4>
+                <p style="margin-bottom: 10px;">MANILA, Philippines — Seven highly urbanized cities (HUCs) have logged record-high new COVID-19 infections on January 23, with Davao City posting almost 2,000 new cases, independent pandemic monitor Octa Research said Monday.</p>            
+                <h6 class="date"> January 24, 2022 | 09:48 AM</h6>
+              </div>
+          </article>
+
+          <article class="recent"><hr>
+            <div class="floating-box">
+                <img src = "https://newsinfo.inquirer.net/files/2022/01/237305-620x417.jpeg" alt ="Covid-19" width = "100%" height = auto>
+                <p class="img-credit">"INSIDE THE COVID WARD Health-care workers remain busy at a dedicated facility of the Philippine General Hospital (PGH). —RICHARD A. REYES"</p>
+                <h4 class="heading1"><a href = "https://newsinfo.inquirer.net/1544200/house-panel-oks-mandatory-risk-allowance-for-health-workers-in-public-health-emergencies" target = "_blank">House panel OKs mandatory risk allowance for health workers in public health emergencies</a></h4>
+                <p style="margin-bottom: 10px;">MANILA, Philippines — The House committee on appropriations approved Monday a measure granting mandatory special risk allowance (SRA) to public and private health workers, including barangay health workers, during public health emergencies.</p>            
+                <h6 class="date">January 24, 2022 | 11:21 AM </h6>
+                
+              </div>  
+            </article>
+
+            <article class="recent"><hr>
+            <div class="floating-box">
+                <img src = "https://newsinfo.inquirer.net/files/2021/10/Bulacan-Provincial-Capitol-101721.jpg" alt = "Bulacan Provincial Capitol /Photo Courtesy of Provincial Government of Bulacan Facebook Page" width = "100%" height = auto>
+                <p class="img-credit">"Bulacan Provincial Capitol /Photo Courtesy of Provincial Government of Bulacan Facebook Page"</p>
+                <h4 class="heading1"><a href = "https://newsinfo.inquirer.net/1502864/bulacan-apayao-capiz-to-be-placed-under-gcq-from-oct-18-to-31" target = "_blank">GCQ in Bulacan, Apayao, Capiz from Oct. 18 to 31</a></h4>
+                <p style="margin-bottom: 10px;">MANILA, Philippines — The COVID-19 quarantine status of Bulacan, Apayao, and Capiz will be downgraded to general community quarantine (GCQ) from October 18 to 31 as approved by the country’s pandemic task force, presidential spokesperson Harry Roque said Sunday.</p>            
+            </div>  
+            </article>
+            
+        </div>
+        <!--RANDOM NEWS-->
+
+        <div class="column middle">
+          <article>
+          <div class="secondfloating-box" style=" text-align: center;">
+              <iframe width="100%" height="400px" src="https://www.youtube.com/embed/vEITzP8Whv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h2 class="heading"><a href = "https://www.gmanetwork.com/news/news/nation/807279/comelec-to-declare-final-list-of-eleksyon-2022-candidates-by-december/story/" target = "_blank">COMELEC to declare final list of Eleksyon 2022 candidates by December</a></h2>
+              <p class="middle-content"> The Commission on Elections (Comelec) on Sunday said it will publish the final list of Eleksyon 2022 candidates by December as it expects to remove nuisance candidates from its current list.In an interview over Dobol B TV, Comelec spokesman James Jimenez said they also expect to remove around 95% nuisance candidates."Ine-expect natin ang final list around December. 'Yun ang final. Ang pagsasala magagaganap ngayon (We expect a final list this December. That's the final list. We start our evaluation today)," said Jimenez.</p>            
+          </div>
+          </article>
+        <hr>
+          <article>
+          <div class="secondfloating-box" style=" text-align: center;">
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/7roYFwMGkQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+            <h2 class="heading"><a href = "https://www.rappler.com/nation/elections/noli-de-castro-drops-senatorial-bid" target="_blank">Noli de Castro drops senatorial bid</a></h2>
+            <p class="middle-content">Veteran news anchor and former vice president Noli de Castro is withdrawing his candidacy for senator, Aksyon Demokratiko chairman Ernest Ramel confirmed on Wednesday, October 13. In a call with Rappler, Ramel said De Castro is withdrawing his certificate of candidacy for senator merely a week after filing it before the Commission on Elections (Comelec). Aksyon, the party which De Castro just joined in relation to his senatorial bid, said the newsman decided he could serve Filipinos better by continuing to work in the news industry, rather than in politics.</p>            
+          </div>
+          </article>
+        </div>
+
+        <!--TRENDING NEWS-->
+
+        <div class="column right">
+            <h3 class="subtitle"><span class="yellow">TRENDING</span> NOW</h3> 
+            
+            <article class="trending">
+              <h4 class="heading2"><a href = "https://www.philstar.com/headlines/2022/01/23/2155749/china-donates-p1-billion-military-aid-philippines" target = "_blank">China donates P1 billion military aid to Philippines</a></h4>
+              <p>MANILA, Philippines — The Chinese government has donated some P1 billion worth of military assistance to the Philippines.</p>
+              <h6 class="date">January 23, 2022 | 12:00am</h6>
+            </article>
+            <hr>
+  
+            <article class="trending">
+              <h4 class="heading2"><a href = "https://www.philstar.com/headlines/2022/01/23/2155748/oil-prices-go-tuesday" target = "_blank">Oil prices to go up Tuesday</a></h4>
+              <p>MANILA, Philippines — Oil companies are raising pump prices for the fourth straight week on Tuesday.</p>
+              <h6 class="date">January 23, 2022 | 12:00am</h6>
+            </article>
+            <hr>
+            
+            <article class="trending">
+              <h4 class="heading2"><a href = "https://www.philstar.com/headlines/2022/01/21/2155467/marcos-skips-gma-7s-jessica-soho-presidential-interviews" target = "_blank">Marcos skips GMA-7's The Jessica Soho Presidential Interviews</a></h4>
+              <p>MANILA, Philippines — Partido Federal ng Pilipinas’ bet Ferdinand “Bongbong” Marcos Jr. skipped GMA News Public Affairs’ Presidential Interviews to air on Saturday night.</p>
+              <h6 class="date">January 21, 2022 | 8:03pm</h6>
+            </article>
+            <hr>     
+  
+            <article class="trending">
+              <h4 class="heading2"><a href = "https://www.philstar.com/headlines/2022/01/18/2154721/doh-distribute-covid-19-home-care-kits-vulnerable-population" target="_blank">DOH to distribute COVID-19 home care kits to vulnerable population</a></h4>
+              <p>MANILA, Philippines — The Department of Health said Tuesday it will provide COVID-19 care kits to vulnerable individuals who are isolating or quarantining at home.</p>
+              <h6 class="date">January 18, 2022 | 3:43pm</h6>
+            </article>            
+            <hr>
+            <article class="trending">
+              <h4 class="heading2"><a href = "https://newsinfo.inquirer.net/1502892/us-panel-votes-to-authorize-jj-covid-19-vaccine-booster" target="_blank">US panel votes to authorize J&J COVID-19 vaccine booster</a></h4>
+              <p>WASHINGTON — A high level panel of US medical experts voted unanimously Friday to recommend authorizing a second shot of the Johnson & Johnson Covid vaccine.</p>
+              <h6 class="date">October 17, 2021 | 11:12am</h6>
+            </article>
+            <hr>          
+            <article class="trending">
+              <h4 class="heading2"><a href = "https://www.philstar.com/nation/2021/10/17/2134676/manila-bay-dolomite-beach-reopens" target = "_blank">Manila Bay Dolomite beach reopens</a></h4>
+              <p>MANILA, Philippines — The man-made dolomite beach at Manila Bay was reopened yesterday after Metro Manila was eased into Alert Level 3 status.</p>
+              <h6 class="date">October 17, 2021 | 12:00am</h6>
+            </article>
+            <hr>
+  
+            <article class="trending">
+              <h4 class="heading2"><a href = "https://www.philstar.com/entertainment/2021/10/17/2134614/brillante-mendoza-honors-boxers-gensan-punch-wins-award-busan-filmfest" target="_blank">Brillante Mendoza honors boxers in Gensan Punch, wins award at Busan filmfest</a></h4>
+              <p>Award-winning director Brillante Mendoza hopes to “bring attention to hardworking and skilled boxers” in the Philippines and Japan after winning the prestigious Kim Jiseok Award at the 26th Busan International Film Festival (BIFF) last Friday for his film Gensan Punch.</p>
+              <h6 class="date">October 17, 2021 | 12:00am</h6>
+            </article>            
+            
+          </div>
+    </div>
+
+    </section>
+
+    
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-row">
+
+          <div class="footer-column"><br><br>
+              <h4>follow us</h4>
+              <div class="social-links">
+                  <a href="https://web.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+          <div class="footer-column">
+              <br><br><h4>Hope News & Info</h4>
+              <ul>
+                  <li><a href="Home.html" target="_blank">Home</a></li>
+                  <li><a href="Videos.html" target="_blank">Videos</a></li>
+                  <li><a href="Articles.html" target="_blank">Articles</a></li>
+                  <li><a href="About.html" target="_blank">About Us</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-column"  style="margin-left: 100px;width:30%;color: #bbbbbb;"><br>
+              <img class= "footer-logo" src="Images/HopeLogo.png"><br><br>
+
+              <p>For advertising, we will get in touch with you! For more information on our products and services, you can reach us at:<br><br>
+                  Telephone: (+632) 857-4627 local 4300<br>
+                  Email: advertising@thereishope.net<br>
+                  Fax: (+632) 333 7661<br>
+                  Contact us via instant messenger: TUP MANILA</p>
+          </div>
+      
+      </div>
+      <br>
+      <hr>
+      <p style="text-align: center; color:#fff;padding-top: 10px;letter-spacing: 1px;">Hope — Online News © 2022</p>
+  </div>
+</footer>
+
+<!--JAVASCRIPT-->
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementsByClass("header");
+    } else {
+      document.getElementsByClass("navbar");
+    }
+  }
+</script>
+
+
+
+
+</body>
+</html>

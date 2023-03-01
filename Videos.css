@@ -1,0 +1,282 @@
+
+*{
+    margin: 0;
+    padding:0;
+
+}
+
+
+/*HEADER & NAVBAR*/
+
+.navbar{
+    overflow: hidden;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background-color: #181818;
+    text-align: center;
+}
+.navbar a{
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 10px;
+}
+.navbar a:hover {
+    color: #DFB667;
+    border-bottom: 2px solid #CB9C43;
+}
+.navbar a.active {
+    color: #DFB667;
+    border-bottom: 2px solid #CB9C43;
+}
+.logo{
+    width: 170px;
+}
+nav{
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
+    letter-spacing: 3px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+/*Time and date*/
+#clockDisplay{
+    font-family: Helvetica, sans-serif;
+    background-color: #181818;
+    color: #fff;
+    padding-left: 35px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+header{
+    background-color: #181818;
+    text-align: center;
+    height: 100%;
+}
+/* END HEADER & NAVBAR*/
+
+
+/* DIVISIONS */
+
+/* Create two equal columns that floats next to each other */
+.column{
+    float: left;
+}
+.left{
+    width: 80%;
+    height: 100%;
+    /*background-color: #CB9C43;*/
+}
+.right{
+    width: 19%;
+    border-left: 1px solid #dddddd;
+    height: 100%;
+    padding-left: 10px;
+
+    /*background-color: #DFB667;*/
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 1200px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+/*VIDEOS*/
+#container-a{
+    margin:25px;
+}
+
+.floating-box-top {
+    float: left;
+    width: 800px;
+    height: auto;
+    margin:15px;
+    transition: 1s;
+
+    /*background-color: #DFB667;*/
+}
+.top-video{
+    width: 700px;
+    height: 400px;
+}
+.floating-box {
+    float: left;
+    width: 440px;
+    height: 420px;
+    margin:25px;
+    transition: 1s;
+
+    /*background-color: #DFB667;*/
+}
+.floating-box:hover{
+    transform: scale(1.1);
+}
+iframe{
+    width: 450px;
+    height: 340px;
+}
+.heading1{
+    font-family: Helvetica,Verdana;
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #181818;
+}
+
+/*TRENDING NEWS*/
+.trending{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #181818;
+}
+.secondfloating-box{
+    float:inline-flex;
+    width:100%;
+    height:255px;
+}
+.heading2{
+    margin-bottom: 10px;
+}
+.heading2 a{
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #181818;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+}
+.heading2 a:hover{
+    color: #09226d;
+    font-size: 18px;
+}
+p{
+    line-height: 17px;
+    font-size: 14px;
+}
+.date{
+    padding-top: 10px;
+    font-size: 12px;
+    color:#c2c2c2;
+}
+
+.subtitle{
+    font-family: Helvetica, sans-serif;
+    font-weight:900;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-top:15px;
+    color: #181818;
+    
+}
+.yellow{
+    color:#CB9C43;
+}
+
+hr{
+    border: 1px solid #dddddd;
+}
+
+/*Container-A*/
+/*FOOTER*/
+
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #181818;
+    padding: 10px 0;
+}
+.footer-column{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-column h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-column h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #DFB667;;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-column ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-column ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-column ul li a:hover{
+	color: #DFB667;
+	padding-left: 8px;
+}
+.footer-column .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+    background-color: #fff;
+	color: #181818;
+	transition: all 0.5s ease;
+}
+.footer-column .social-links a:hover{
+    background-color: #DFB667;
+    color: #181818;
+}
+.footer-logo{
+    width: 150px;
+}
+/*responsive*/
+@media(max-width: 700px){
+  .footer-column{
+    width: 50%;
+}
+}
+@media(max-width: 550px){
+  .footer-column{
+    width: 100%;
+}
+}
